@@ -1,0 +1,296 @@
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  background: #111;
+  padding: 18px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+.nav-links a:hover {
+  color: #d4a373;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+}
+
+/* HEADER */
+
+.about-header {
+  text-align: center;
+  padding: 100px 20px;
+  background: #e9e3d8;
+}
+
+.about-header p {
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.about-header h1 {
+  font-size: 60px;
+  margin-top: 15px;
+}
+
+/* STORY */
+
+.about-story {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-image {
+  height: 550px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-label {
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: #777;
+}
+
+.about-content h2 {
+  font-size: 45px;
+  line-height: 1.1;
+  margin: 20px 0 30px;
+}
+
+.about-content > p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-content a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #111;
+  color: white;
+  padding: 15px 22px;
+}
+
+/* VALUES */
+
+.values-section {
+  background: white;
+  padding: 90px 7%;
+}
+
+.values-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.values-heading p {
+  color: #777;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.values-heading h2 {
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.values-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  padding: 40px;
+  background: #f4f1eb;
+}
+
+.value-card span {
+  font-size: 14px;
+  color: #999;
+}
+
+.value-card h3 {
+  font-size: 28px;
+  margin: 25px 0 15px;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* MISSION */
+
+.mission {
+  padding: 120px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.mission p {
+  color: #aaa;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.mission h2 {
+  font-size: 55px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #111;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 6% 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer-brand h2 {
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.footer-brand p,
+.footer-contact p {
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .about-header h1 {
+    font-size: 42px;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    padding: 70px 5%;
+  }
+
+  .about-image {
+    height: 400px;
+  }
+
+  .about-content h2 {
+    font-size: 35px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission h2 {
+    font-size: 38px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+}
